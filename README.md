@@ -1,69 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Stripe API Lecture
 
-## Available Scripts
+Easy way to create a checkout payment with Stripe API.
+Note: There are many ways to use the Stripe API. I recommed taking a look at the [documentation](https://stripe.com/docs) for more advanced use of it.
 
-In the project directory, you can run:
+### Package/Gem required
 
-### `yarn start`
+-	React:
+  o	‘dotenv’
+  o	‘react-stripe-checkout’
+-	Ruby:
+  o	‘dotenv’
+  o	‘stripe’
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Safety/Security
 
-### `yarn test`
+As we are dealing with an external API, it remain important to hide you API keys in a `.env` file and add this file to your gitignore. Just a friendly reminder if you don't want to have to pay huge fees for putting an API key out to the public.
+Make sure that your Stripe account is in Test Mode(comes in test mode by default), while also using the test keys.
+Reminder!! Never use a real Credit Card/Debit Card number. The test number for the card is 4242 4242 4242 4242.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `Goals`
 
-### `yarn build`
+### `Front End`
+1. Install ‘react-stripe-checkout’ & ‘dotenv’ packages;
+2. Create `.env` file;
+3. Add `<StripeCheckout />` Component;
+4. Create `onToken` function to handle transaction;
+5. Create `fetch` to `charges` controller in the back end with `token` and `price`;
+6. Check Stripe account for activity
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `Back End`
+1. Install ‘dotenv’ & ‘stripe’ gems;
+2. Create `.env` file;
+3. Create `charges` controller to handle Stripe API charges;
+4. Create custom `route` for the `charges` controller;
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# StripeShop
