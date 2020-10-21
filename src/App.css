@@ -1,0 +1,29 @@
+body{
+    text-align: center;
+}
+
+.home_page_container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px 200px;
+}
+
+.item_container{
+    flex: 1 1 160px;
+}
+
+.item_image{
+    width: 300px;
+    margin: 15px;
+}
+
+.item_price_btn{
+    cursor: pointer;
+    background-color: rgb(67, 156, 235);
+    border-radius: 5px;
+    border-style: none;
+    padding: 8px 25px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
