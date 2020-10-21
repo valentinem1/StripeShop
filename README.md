@@ -11,8 +11,8 @@ Note: There are many ways to use the Stripe API. I recommed taking a look at the
 
 ### Safety/Security
 
-As we are dealing with an external API, it remain important to hide you API keys in a `.env` file and add this file to your gitignore. Just a friendly reminder if you don't want to have to pay huge fees for putting an API key out to the public. <br/>
-Make sure that your Stripe account is in Test Mode(comes in test mode by default), while also using the test keys.< br/>
+As we are dealing with an external API, it remain important to hide you API keys in a `.env` file and add this file to your gitignore. Just a friendly reminder if you don't want to have to pay huge fees for putting an API key out to the public.
+Make sure that your Stripe account is in Test Mode(comes in test mode by default), while also using the test keys.
 Reminder!! Never use a real Credit Card/Debit Card number. The test number for the card is 4242 4242 4242 4242.
 
 ### Goals
