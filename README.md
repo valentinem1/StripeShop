@@ -6,11 +6,11 @@ Note: There are many ways to use the Stripe API. I recommed taking a look at the
 ### Package/Gem required
 
 -	React:
-  o	‘dotenv’
-  o	‘react-stripe-checkout’
+  - ‘dotenv’
+  - ‘react-stripe-checkout’
 -	Ruby:
-  o	‘dotenv’
-  o	‘stripe’
+  - ‘dotenv’
+  - ‘stripe’
 
 
 ### Safety/Security
@@ -19,7 +19,7 @@ As we are dealing with an external API, it remain important to hide you API keys
 Make sure that your Stripe account is in Test Mode(comes in test mode by default), while also using the test keys.
 Reminder!! Never use a real Credit Card/Debit Card number. The test number for the card is 4242 4242 4242 4242.
 
-### `Goals`
+### Goals
 
 ### `Front End`
 1. Install ‘react-stripe-checkout’ & ‘dotenv’ packages;
